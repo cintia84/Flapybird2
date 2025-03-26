@@ -1,9 +1,9 @@
 let move_speed = 4, grativy = 0.6;
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
-let sound_point = new Audio('sonidos/point.mp3');
-let sound_die = new Audio('sonidos/die.mp3');
-let sound_fondo = new Audio('sonidos/happy pluck1.mp3');
+let sound_point = new Audio('point.mp3');
+let sound_die = new Audio('die.mp3');
+let sound_fondo = new Audio('happy pluck1.mp3');
 
 let bird_props = bird.getBoundingClientRect();
 let background = document.querySelector('.background-video').getBoundingClientRect();
@@ -92,14 +92,14 @@ function play() {
 
         document.addEventListener('keydown', (e) => {
             if (e.key == 'ArrowUp' || e.key == ' ') {
-                img.src = 'imagenes/Bird-2.png';
+                img.src = 'Bird-2.png';
                 bird_dy = -7.6; // Ajusta la velocidad de salto
             }
         });
 
         document.addEventListener('keyup', (e) => {
             if (e.key == 'ArrowUp' || e.key == ' ') {
-                img.src = 'imagenes/Bird.png';
+                img.src = 'Bird.png';
             }
         });
 
